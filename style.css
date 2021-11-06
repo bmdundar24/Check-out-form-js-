@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+h1 {
+  margin: 2vh 0;
+}
+h3 {
+  margin: 2vh 0 3vh 0;
+}
+
+select:focus {
+  outline: none;
+}
+select {
+  border: none;
+  width: 80px;
+  height: 2rem;
+}
+.inputs {
+  border: 1px solid #bdbdbd;
+  border-radius: 0.3rem;
+  margin: 1vh 0;
+}
+.inputs input {
+  border: none;
+  font-size: larger;
+  line-height: 2rem;
+}
+.inputs input:focus {
+  outline: none;
+}
+.forms i {
+  padding-left: 0.5rem;
+  opacity: 0.5;
+}
+img {
+  width: 96px;
+  height: auto;
+  /* padding-right: 1rem; */
+  border-radius: 0.5rem;
+}
+.cell {
+  display: flex;
+  padding-bottom: 1vh;
+  padding-bottom: 1rem;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+}
+.right-side {
+  width: 40%;
+  background-color: #eeeeee;
+  padding: 1.5rem;
+  height: 42vh;
+  border-radius: 0.5rem;
+}
+#shipping,
+#total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  padding: 5px;
+}
+.price {
+  margin-top: 2rem;
+}
+.cell_r {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+strong {
+  color: #f2994a;
+  font-size: large;
+}
+del {
+  font-size: small;
+}
+.forms {
+  width: 55%;
+}
+.cevre {
+  padding: 5px;
+  background: #e0e0e0;
+  border-radius: 0.5rem;
+}
+.country-side {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.postcode {
+  width: 300px;
+}
+#continue {
+  width: 8vw;
+  height: 3vh;
+  font-size: 15px;
+  background-color: #f2994a;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+}
+.buton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+@media (max-width: 950px) {
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+  }
+  .buton {
+    justify-content: center;
+  }
+  #continue {
+    width: 80px;
+    height: 30px;
+  }
+}
+@media (max-width: 840px) {
+  .country-side {
+    flex-direction: column;
+  }
+  .right-side {
+    width: 95%;
+    height: max-content;
+  }
+  .forms {
+    width: 95%;
+  }
+  .postcode {
+    width: 100%;
+  }
+  .selected {
+    width: 120px;
+  }
+}
