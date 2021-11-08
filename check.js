@@ -7,7 +7,6 @@ window.onload = () => {
   sessionStorage.setItem("shippingPrice", shippingPrice);
   caclculateCartTotal();
 };
-
 let quantityDivs = document.getElementsByClassName("quantity-controller");
 console.log(quantityDivs);
 [...quantityDivs].forEach((quantityDiv) => {
