@@ -1,6 +1,5 @@
 const taxRate = 0.18;
 const shippingPrice = 15.0;
-
 window.onload = () => {
   window.localStorage.setItem("taxRate", taxRate);
   localStorage.setItem("shippingPrice", shippingPrice);
