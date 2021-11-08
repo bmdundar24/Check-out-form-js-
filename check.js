@@ -29,7 +29,6 @@ console.log(quantityDivs);
     calculateProductTotal(quantitiyP);
   });
 });
-
 const calculateProductTotal = (quantitiyP) => {
   let productInfoDiv = quantitiyP.parentElement.parentElement;
   const productPrice = productInfoDiv.querySelector("strong").innerText;
