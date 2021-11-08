@@ -37,7 +37,6 @@ const calculateProductTotal = (quantitiyP) => {
   productTotalDiv.innerText = productTotalPrice.toFixed(2);
   caclculateCartTotal();
 };
-
 const caclculateCartTotal = () => {
   //Node List.forech or array.forEach
   let productTotalPrices = document.querySelectorAll(".product-line-price");
