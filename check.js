@@ -5,7 +5,7 @@ window.onload = () => {
   localStorage.setItem("shippingPrice", shippingPrice);
   window.sessionStorage.setItem("taxRate", taxRate);
   sessionStorage.setItem("shippingPrice", shippingPrice);
-  caclculateCartTotal();
+  caclculateCartTotal(); 
 };
 let quantityDivs = document.getElementsByClassName("quantity-controller");
 console.log(quantityDivs);
